@@ -1,0 +1,160 @@
+@import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+/* font family: Barlow Semi Condensed */
+
+/* 1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+font weights: 500, 600 */
+
+:root{
+--Moderate_violet: hsl(263, 55%, 52%);
+--Very_dark_grayish_blue: hsl(217, 19%, 35%);
+--Very_dark_blackish_blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+--Light_gray: hsl(0, 0%, 81%);
+--Light_grayish_blue: hsl(210, 46%, 95%);
+font-size: 13px;
+font-family: 'Barlow Semi Condensed', sans-serif;
+background-color: var(--Light_grayish_blue);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+main{
+  margin: 5rem 2rem;
+  padding: 1rem;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: auto;
+  gap: 2rem;
+  
+}  
+
+.opinions{
+  padding: 1rem;
+  border-radius: 1rem;
+  
+}
+.person{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin:1rem;
+   
+}
+
+img{
+  grid-area: span 2 / 1;
+  height: 70%;
+  border-radius: 50%;
+  align-self: center;
+  border: 2px solid;
+  
+}
+
+h1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-self: end;
+  margin-left: 1.5rem;
+}
+
+h2{
+  font-size: 0.9rem;
+  opacity: 50%;
+  align-self: start;
+  margin-left: 1.5rem;
+}
+
+.opinion{
+  margin:1rem;
+}
+.op-head{
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem ;
+}
+
+.content{
+  height: 100%;
+  opacity: 70%;
+}
+
+.daniel{
+  background-color: var(--Moderate_violet);
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 1.5rem top;
+  color: var(--White);
+}
+
+.jonathan{
+  background-color: var(--Very_dark_grayish_blue);
+  color: var(--White);
+}
+
+.jeanette{
+  background-color: var(--White);
+  color: var(--Very_dark_blackish_blue);
+  box-shadow: 39px 49px 21px -55px rgba(66, 68, 90, 1)
+}
+
+.patrick{
+  background-color: var(--Very_dark_blackish_blue);
+  color: var(--White);
+}
+
+.kira{
+  background-color: var(--White);
+  color: var(--Very_dark_blackish_blue);
+  box-shadow: 39px 49px 21px -55px rgba(66, 68, 90, 1)
+}
+.daniel img,
+.patrick img{
+  border-color: var(--Moderate_violet);
+ }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (orientation: landscape) and (min-width: 1024px){
+
+  main{
+    margin: 5rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 70%;
+    line-height: 1.5rem;
+   
+ }  
+
+ .daniel{
+  grid-area: 1 / 1 / 2 / 3;
+  background-position: right 6rem top;
+ }
+
+ 
+ .kira{
+  grid-area: 1 / 4 / 3  / 6; 
+}
+
+ .patrick{
+    grid-area: 2 / 2 / 3 /4;
+  }
+
+ .content{
+    margin-top:2rem;
+  }
+}
