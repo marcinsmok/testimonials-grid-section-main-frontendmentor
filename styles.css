@@ -86,7 +86,7 @@ h2{
 
 .daniel{
   background-color: var(--Moderate_violet);
-  background-image: url(/images/bg-pattern-quotation.svg);
+  background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: right 1.5rem top;
   color: var(--White);
